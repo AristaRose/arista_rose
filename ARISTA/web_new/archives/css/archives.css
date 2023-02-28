@@ -1,0 +1,485 @@
+@charset "UTF-8";
+/**
+ * @desc archives.css
+ * @author Chen
+ * @date 2022/11/24
+ */
+
+* {
+   margin: 0;
+   padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#archives-main {
+   width: 75.3%;
+   margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Play-Bold';
+    src: url('../../shared/fonts/Play-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Play-Regular';
+    src: url('../../shared/fonts/Play-Regular.ttf');
+}
+
+.sp-title {
+    display: none;
+    height: 21px;
+    font-size: 20px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+}
+
+ /* Module nav
+---------------------------------------------------------------- */
+#nav-link-wrapper {
+   margin-top: 24px;
+   text-align: center;
+}
+
+#nav-link-wrapper .nav-link {
+   display: inline-block;
+   padding: 13px 30px;
+   -webkit-border-radius: 26px;
+   -moz-border-radius: 26px;
+   -o-border-radius: 26px;
+   -ms-border-radius: 26px;
+   border-radius: 26px;
+   background-color: #f5f5f5;
+   color: #000;
+}
+
+#nav-link-wrapper .nav-link-active {
+    color: #FFF;
+    background-color: #213C92;
+}
+
+.archives-article {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Module blue-card
+---------------------------------------------------------------- */
+.blue-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 485px;
+    padding: 0 41px 0 21px;
+    margin-top: 20px;
+    margin-bottom: 22px;
+    background: linear-gradient(269deg,#213c92 1%, #105aaa 99%);
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -o-border-radius: 45px;
+    -ms-border-radius: 45px;
+    border-radius: 45px;
+}
+
+.blue-card .blue-card-img {
+    display: block;
+    width: 466px;
+    height: 452px;
+    border-radius: 25px;
+    margin-right: 60px;
+    object-fit: cover;
+}
+
+.blue-card .blue-card-date {
+    position: relative;
+    color: #fff;
+    font-size: 35px;
+    font-family: Play, Play-Bold;
+    opacity: 0.5;
+}
+
+.blue-card .blue-card-sticky {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+.blue-card .blue-card-title {
+    display: -webkit-box;
+    overflow: hidden;
+    color: #fff;
+    font-size: 43px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.blue-card .blue-card-content {
+    display: -webkit-box;
+    overflow: hidden;
+    width: 95.8%;
+    margin-top: 25px;
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 25px;
+    font-family: Play, Play-Bold;
+    font-weight: 400;
+    opacity: 0.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+}
+
+.blue-card .blue-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-card .blue-card-arrow {
+    margin-left: 20px;
+}
+
+.blue-card .bottom-link {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 23px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+}
+
+/* Module grey-card
+---------------------------------------------------------------- */
+.grey-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46.9%;
+    height: 232px;
+    padding: 0 6px 0 16px;
+    margin-bottom: 37px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -o-border-radius: 45px;
+    -ms-border-radius: 45px;
+    border-radius: 45px;
+}
+
+.grey-card:last-child {
+    margin-bottom: 96px;
+}
+
+.grey-card .grey-card-img {
+    display: block;
+    width: 213px;
+    height: 202px;
+    border-radius: 25px;
+    margin-right: 30px;
+    object-fit: cover;
+}
+
+.grey-card .grey-card-date {
+    color: #000;
+    font-size: 17px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.grey-card .grey-card-title {
+    display: -webkit-box;
+    overflow: hidden;
+    color: #223d94;
+    font-size: 21px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.grey-card .grey-card-content {
+    display: -webkit-box;
+    overflow: hidden;
+    width: 96%;
+    margin: 11px 0;
+    color: #000;
+    font-size: 17px;
+    font-family: Play, Play-Bold;
+    opacity: 0.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-word;
+}
+.grey-card .grey-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grey-card .bottom-link {
+    display: flex;
+    align-items: center;
+    color: #223d94;
+    font-size: 20px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+}
+
+.grey-card .grey-card-arrow {
+    display: inline-block;
+    width: 28px;
+    margin-left: 10px;
+}
+
+.grey-card .grey-card-share {
+    display: inline-block;
+    width: 21px;
+    margin-right: 15px;
+}
+
+/* Module share-btn
+---------------------------------------------------------------- */
+.sec4-coll-out {
+    display: flex;
+}
+.sec4-coll-in {
+    display: flex;
+}
+.sec4-coll-icon {
+    width: 24px;
+    height: 24px;
+}
+.sec4-coll-a {
+    margin: 0 6px;
+}
+.blue-card .blue-card-bottom,
+.grey-card .grey-card-bottom {
+    position: relative;
+}
+.blue-card .blue-card-bottom .collapse-horizontal,
+.grey-card .grey-card-bottom .collapse-horizontal
+{
+    position: absolute;
+    right: 38px;
+}
+.blue-card .blue-card-bottom .collapse-horizontal {
+    top: 1px;
+}
+
+/* more article btn
+---------------------------------------------------------------- */
+.btn.btn-outline-blue {
+    display: block;
+    border: 1px solid #0a2d82;
+    background: 0 0;
+    color: #0a2d82;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    line-height: 36px;
+    padding: 0 35px;
+    border-radius: 2px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+.btn.btn-outline-blue:hover {
+    color: #fff;
+    background-color: #0a2d82;
+}
+
+/* responsive */
+@media screen and (max-width: 1758px) {
+    .blue-card .blue-card-title {
+        font-size: 33px;
+    }
+    .blue-card .blue-card-content {
+        font-size: 20px;
+    }
+    .grey-card .grey-card-title {
+        font-size: 18px;
+    }
+    .grey-card .grey-card-content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .archives-article {
+        justify-content: center;
+    }
+    .blue-card .blue-card-img {
+        margin-right: 25px;
+    }
+    .blue-card .blue-card-date,
+    .blue-card .blue-card-title {
+        font-size: 25px;
+    }
+    .blue-card .blue-card-content {
+        font-size: 16px;
+    }
+    .blue-card .bottom-link {
+        font-size: 18px;
+    }
+    .grey-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .blue-card {
+        height: 393px;
+    }
+    .blue-card .blue-card-img {
+        width: 366px;
+        height: 348px;
+    }
+    .blue-card .blue-card-date,
+    .blue-card .blue-card-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* sp */
+    .sp-title {
+        display: block;
+    }
+    
+    #archives-main {
+        width: 100%;
+        overflow: hidden;
+    }
+    #nav-link-wrapper {
+        flex: unset;
+        white-space: nowrap;
+        text-align: left;
+        margin-left: 12px;
+    }
+    .blue-card {
+        flex-wrap: nowrap;
+        height: auto;
+        padding: 18px 30px;
+        margin-top: 11px;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+    .blue-card .blue-card-img {
+        width: 101px;
+        height: 98px;
+        margin-top: 0;
+        border-radius: 5px;
+    }
+    .blue-card .blue-card-content {
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    .blue-card-sticky {
+        width: 9px;
+    }
+    .grey-card {
+        height: auto;
+        padding: 6px;
+        margin: 0 28px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        margin-bottom: 11px;
+    }
+    .grey-card .bottom-link {
+        align-items: flex-end;
+    }
+    .grey-card .grey-card-img {
+        width: 89px;
+        height: 84px;
+        border-radius: 5px;
+        margin-right: 9px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .grey-card .grey-card-date,
+    .blue-card .blue-card-date {
+        font-size: 9px;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+    .grey-card .grey-card-title,
+    .blue-card .blue-card-title{
+        min-height: 18px;
+        margin-bottom: 6px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    .grey-card .grey-card-content,
+    .blue-card .blue-card-content {
+        margin: 1px;
+        margin-bottom: 12px;
+        font-size: 10px;
+        line-height: 10px;
+        -webkit-line-clamp: 2;
+    }
+    .grey-card .bottom-link,
+    .blue-card .bottom-link {
+        font-size: 10px;
+    }
+    .grey-card .grey-card-arrow,
+    .blue-card .blue-card-arrow {
+        width: 12px;
+    }
+    .grey-card .grey-card-share,
+    .blue-card .blue-card-share {
+        width: 14px;
+    }
+    .grey-card:last-child {
+        margin-bottom: 42px;
+    }
+    #nav-link-wrapper .nav-link {
+        padding: 6px 21px;
+        margin: 1px;
+        font-size: 12px;
+    }
+    /* Module share-btn
+    ---------------------------------------------------------------- */
+    .sec4-coll-in {
+        height: 9px;
+        align-items: center;
+    }
+    .sec4-coll-icon {
+        width: 12px;
+        height: 12px;
+    }
+    .blue-card .blue-card-bottom .collapse-horizontal,
+    .grey-card .grey-card-bottom .collapse-horizontal {
+        top: 2px;
+        right: 32px;
+    }
+    .blue-card .blue-card-bottom .collapse-horizontal {
+        right: 15px;
+    }
+    /* sp */
+}
+
+@media screen and (max-width: 280px) {
+    #nav-link-wrapper .nav-link {
+        padding: 12px 20px;
+    }
+    .blue-card .blue-card-img {
+        margin-top: -68px;
+    }
+}
