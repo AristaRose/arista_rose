@@ -110,7 +110,7 @@
 
 #menunav .active .menu-link {
   color: #ffffff;
-  background-color: #003688;
+  background-color: #0b0533;
 }
 
 
@@ -1122,6 +1122,7 @@ footer .links a:hover{
 }
 
 footer .credit p{
+  margin-bottom: 0;
   font-weight: 100;
   color:#fff;
 }
@@ -1151,18 +1152,19 @@ footer .credit p{
        display: inline-block;
     }
     #menunav .menu-ul {
-        height: 0%;
-    }
+      height: 100vh;
+      background-color: #07152900;
+  }
     #menunav ul{
        position: absolute;
        top: 100%;
        right: -100%;
-       width: 17rem;
+       width: 20rem;
        height: 100vh;
        transition: 0.5s;
     }
 #menunav ul .menu-link-txt{
-    font-size: 75%;
+    font-size: 100%;
 }
 
     #menunav ul.active{
@@ -1172,7 +1174,7 @@ footer .credit p{
     #menunav ul a{
        display:block;
        color: var(--bg);
-       margin: 1.5rem;
+       margin: 1rem;
        padding: 0.5rem;
        font-size: 2rem;
     }
@@ -1225,7 +1227,7 @@ footer .credit p{
      padding-left: 5rem;
      padding-right: 5rem;
 }
-
+}
 
 /* mobile */
 @media (max-width:450px) {

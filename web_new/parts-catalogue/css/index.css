@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+/* Common
+---------------------------------------------------------------- */
+* {
+  font-family: Play-Regular, Play-Bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Play-Bold';
+  src: url('../../shared/fonts/Play-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Play-Regular';
+  src: url('../../shared/fonts/Play-Regular.ttf');
+}
+
+/* Title
+---------------------------------------------------------------- */
+#container-title {
+  height: 52px;
+  background: #105cab;
+}
+
+#container-title .title-text {
+  margin-left: 10%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #fff;
+}
+
+/* Banner
+---------------------------------------------------------------- */
+#container-banner .banner-img {
+  display: block;
+  width: 100%;
+}
+
+/* Main
+---------------------------------------------------------------- */
+#container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1248px;
+  margin: 0 auto;
+}
+
+#container-main .container-main-title {
+  margin: 78px 0px 36px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #213c92;
+}
+
+#container-main .container-main-text {
+  font-size: 18px;
+  margin-bottom: 70px;
+}
+
+#container-main .container-main-button {
+  display: flex;
+  gap: 2%;
+  margin-bottom: 180px;
+}
+
+#container-main .container-main-button .button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 32%;
+  height: 46px;
+  background: #203b8e;
+  border-radius: 23px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#container-main .container-main-button .button-box .button-box-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Responsive
+---------------------------------------------------------------- */
+@media screen and (max-width:1440px) {
+
+  /* Main - Responsive
+  ---------------------------------------------------------------- */
+  #container-main {
+    width: 84%;
+  }
+
+  #container-main .container-main-button .button-box {
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width:1024px) {
+
+  /* Main - Responsive
+  ---------------------------------------------------------------- */
+  #container-main .container-main-button {
+    flex-wrap: wrap;
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+
+  #container-main .container-main-button .button-box {
+    width: 100%;
+  }
+
+  #container-main .container-main-title {
+    margin: 36px 0px;
+  }
+}
+
+@media screen and (max-width:767px) {
+
+  /* Title - Responsive
+  ---------------------------------------------------------------- */
+  #container-title {
+    display: none;
+  }
+
+  /* Main - Responsive
+  ---------------------------------------------------------------- */
+  #container-main .container-main-text {
+    margin-bottom: 40px;
+    font-size: 16px;
+  }
+
+  #container-main .container-main-title {
+    margin: 36px 0 10px;
+  }
+}

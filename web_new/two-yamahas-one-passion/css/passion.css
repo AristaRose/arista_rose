@@ -1,0 +1,573 @@
+@charset "UTF-8";
+/**
+ * @desc two-yamaha-one-passion.css
+ * @author Chen
+ * @date 2022/11/25
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    --content-width: 70%;
+}
+
+a {
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Play-Bold';
+    src: url('../../shared/fonts/Play-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Play-Regular';
+    src: url('../../shared/fonts/Play-Regular.ttf');
+}
+
+.passion-nav-sticky {
+    position: fixed!important;
+    top: 42px!important;
+    z-index: 10;
+}
+
+.passion-nav .passion-nav-link {
+    display: none;
+    height: 100%;
+    padding: 10px 5px;
+    margin: 0 10px;
+    font-size: 12px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+.passion-nav .passion-nav-link-active {
+    background: #003a84;
+}
+
+/* banner
+---------------------------------------------------------------- */
+.passion-banner {
+    --banner-height: 374px;
+    position: relative;
+    height: var(--banner-height);
+    background-color: #162861;
+}
+
+.passion-banner-img,
+.passion-banner-fog {
+    display: block;
+    width: 100%;
+    height: var(--banner-height);
+    object-fit: cover;
+}
+
+.passion-banner-fog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--banner-height);
+    z-index: 10;
+}
+
+.passion-banner-msg {
+    position: absolute;
+    left: 13.3%;
+    bottom: 39px;
+    z-index: 10;
+}
+
+.passion-banner-msg .banner-msg {
+    color: #fff;
+    font-size: 42px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+}
+
+/* two-yamaha
+---------------------------------------------------------------- */
+/* passsion-nav */
+.passion-nav {
+    height: 52px;
+    background-color: #162861;
+}
+
+/* two-yamaha */
+.two-yamaha {
+    width: var(--content-width);
+    margin: 0 auto;
+    margin-top: 73px;
+    margin-bottom: 66px;
+}
+
+.two-yamaha .two-yamaha-logo {
+    display: block;
+    width: 77%;
+    margin: 0 auto;
+    margin-bottom: 43px;
+}
+
+.two-yamaha .two-yamaha-introduce {
+    margin-bottom: 8px;
+    color: #000;
+    font-size: 18px;
+    font-family: Play, Play-Bold;
+}
+
+.two-yamaha .link-to {
+    width: 21px;
+    height: 21px;
+    margin-left: 24px;
+}
+
+.yamaha-link {
+    font-size: 28px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    color: #223d94;
+}
+/* yamaha-history
+---------------------------------------------------------------- */
+.yamaha-history {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 48px;
+}
+
+.history-images-pc {
+    overflow: auto;
+}
+
+.history-images-pc::-webkit-scrollbar {
+    display: none;
+}
+
+.yamaha-history .yamaha-history-title {
+    margin-bottom: 15px;
+    color: #223e95;
+    font-size: 37px;
+    font-family: Play, Play-Bold;
+}
+
+.yamaha-history .yamaha-history-content {
+    margin-bottom: 40px;
+    color: #000;
+    font-size: 18px;
+    font-family: Play, Play-Bold;
+}
+
+.yamaha-history-title,
+.yamaha-history-content {
+    width: var(--content-width);
+    margin: 0 auto;
+}
+
+.yamaha-history .right-arrow {
+    margin-left: 14px;
+}
+
+.yamaha-history .history-line {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 39px;
+    background: linear-gradient(270deg,#209de0, #105baa);
+}
+
+.yamaha-history .history-link {
+    position: absolute;
+    right: 281px;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.yamaha-history .history-link-line {
+    display: inline-block;
+    width: 148px;
+    height: 39px;
+    background: linear-gradient(270deg,#080808, #105baa);
+}
+
+.yamaha-history .blue-right-arrow {
+    width: 39px;
+    height: 39px;
+    vertical-align: initial;
+}
+
+.yamaha-hr {
+    width: var(--content-width);
+    border: 1px solid #707070;
+    margin: 0 auto;
+    margin-top: 86px;
+    margin-bottom: 34px;
+    opacity: 0.7;
+}
+
+/* Activity
+---------------------------------------------------------------- */
+.activity {
+    width: var(--content-width);
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.activity .activity-title {
+    margin-bottom: 37px;
+    color: #003688;
+    font-size: 30px;
+    font-family: Play, Play-Bold;
+}
+
+.grey-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* grey-card */
+.grey-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46.9%;
+    height: 232px;
+    padding: 0 6px 0 16px;
+    margin-bottom: 37px;
+    background-color: #f5f5f5;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -o-border-radius: 45px;
+    -ms-border-radius: 45px;
+    border-radius: 45px;
+}
+
+.grey-card:last-child {
+    margin-bottom: 54px;
+}
+
+.grey-card .grey-card-img {
+    display: block;
+    width: 213px;
+    height: 202px;
+    border-radius: 25px;
+    margin-right: 9px;
+    object-fit: cover;
+}
+
+.grey-card .grey-card-date {
+    color: #000;
+    font-size: 17px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+    opacity: 0.5;
+}
+
+.grey-card .grey-card-title {
+    display: -webkit-box;
+    overflow: hidden;
+    color: #223d94;
+    font-size: 21px;
+    font-family: Play, Play-Bold;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.grey-card .grey-card-content {
+    display: -webkit-box;
+    overflow: hidden;
+    width: 96%;
+    margin: 11px 0;
+    color: #000;
+    font-size: 17px;
+    font-family: Play, Play-Bold;
+    opacity: 0.5;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    word-break: break-word;
+}
+.grey-card .grey-card-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grey-card .bottom-link {
+    display: flex;
+    align-items: center;
+    color: #223d94;
+    font-size: 20px;
+    font-family: Play, Play-Bold;
+    font-weight: 700;
+}
+
+.grey-card .grey-card-arrow {
+    display: inline-block;
+    width: 28px;
+    margin-left: 10px;
+}
+
+.grey-card .grey-card-share {
+    display: inline-block;
+    width: 21px;
+    margin-right: 15px;
+}
+
+/* Module share-btn
+---------------------------------------------------------------- */
+.sec4-coll-out {
+    display: flex;
+}
+.sec4-coll-in {
+    display: flex;
+}
+.sec4-coll-icon {
+    width: 24px;
+    height: 24px;
+}
+.sec4-coll-a {
+    margin: 0 6px;
+}
+.blue-card .blue-card-bottom,
+.grey-card .grey-card-bottom {
+    position: relative;
+}
+.blue-card .blue-card-bottom .collapse-horizontal,
+.grey-card .grey-card-bottom .collapse-horizontal
+{
+    position: absolute;
+    right: 38px;
+}
+
+/* more-btn */
+.activity .more-btn {
+    display: block;
+    width: 98px;
+    height: 36px;
+    background-color: #112769;
+    color: #FFF;
+    line-height: 36px;
+    text-align: center;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -o-border-radius: 18px;
+    -ms-border-radius: 18px;
+    border-radius: 18px;
+}
+
+/* resposive */
+@media screen and (max-width: 1758px) {
+    .grey-card .grey-card-title {
+        font-size: 18px;
+    }
+    .grey-card .grey-card-content {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .grey-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html,
+    body {
+        --content-width: 84%;
+    }
+
+    .yamaha-history .yamaha-history-title {
+        font-size: 24px;
+    }
+    .yamaha-history .yamaha-history-content,
+    .two-yamaha .two-yamaha-introduce {
+        font-size: 14px;
+    }
+    .activity .activity-title {
+        font-size: 26px;
+    }
+
+    /* sp */
+    .history-show-image {
+        width: 1100px;
+    }
+
+    .passion-banner {
+        --banner-height: 176px;
+        margin-top: 35px;
+    }
+
+    .passion-banner-msg .banner-msg {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    main {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .passion-nav {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 35px;
+    }
+
+    .passion-nav .passion-nav-link {
+        display: block;
+    }
+    
+    .yamaha-link {
+        font-size: 18px;
+    }
+
+    .two-yamaha .link-to {
+        width: 18px;
+        height: 18px;
+        margin-left: 8px;
+        margin-bottom: 5px;
+    }
+    
+    .yamaha-history {
+        width: 100%;
+    }
+
+    .yamaha-history-title,
+    .yamaha-history-content {
+        display: none;
+        width: var(--content-width);
+        margin: 0 auto;
+    }
+
+    .two-yamaha {
+        margin-top: 14px;
+        margin-bottom: -41px;
+    }
+
+    .history-show-left,
+    .history-show-right {
+        width: 100%;
+    }
+
+    .yamaha-history .yamaha-history-content,
+    .two-yamaha .two-yamaha-introduce {
+        font-size: 12px;
+    }
+
+    .two-yamaha .two-yamaha-logo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .yamaha-hr {
+        margin-top: 66px;
+        margin-bottom: 20px;
+    }
+
+    .activity {
+        width: 100%;
+    }
+
+    .activity .activity-title {
+        margin-bottom: 14px;
+    }
+
+    .activity .activity-title,
+    .activity .more-btn {
+        margin-left: 8%;
+    }
+
+    .yamaha-history .history-link {
+        display: flex;
+        width: 100px;
+        right: initial;
+        left: 0px;
+    }
+
+    /* grey-card */
+    .grey-card {
+        height: auto;
+        padding: 6px;
+        margin: 0 25px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        margin-bottom: 11px;
+    }
+    .grey-card .bottom-link {
+        align-items: flex-end;
+    }
+    .grey-card .grey-card-img {
+        width: 89px;
+        height: 84px;
+        border-radius: 5px;
+        margin-right: 9px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+    }
+    .grey-card .grey-card-date,
+    .blue-card .blue-card-date {
+        font-size: 9px;
+        margin: 0;
+        margin-bottom: 6px;
+    }
+    .grey-card .grey-card-title,
+    .blue-card .blue-card-title{
+        min-height: 18px;
+        margin-bottom: 6px;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 16px;
+    }
+    .grey-card .grey-card-content,
+    .blue-card .blue-card-content {
+        margin: 1px;
+        margin-bottom: 12px;
+        font-size: 10px;
+        line-height: 10px;
+        -webkit-line-clamp: 2;
+    }
+    .grey-card .bottom-link,
+    .blue-card .bottom-link {
+        font-size: 10px;
+    }
+    .grey-card .grey-card-arrow,
+    .blue-card .blue-card-arrow {
+        width: 12px;
+    }
+    .grey-card .grey-card-share,
+    .blue-card .blue-card-share {
+        width: 14px;
+    }
+    .grey-card:last-child {
+        margin-bottom: 42px;
+    }
+    /* Module share-btn
+    ---------------------------------------------------------------- */
+    .sec4-coll-in {
+        height: 9px;
+        align-items: center;
+    }
+    .sec4-coll-icon {
+        width: 12px;
+        height: 12px;
+    }
+    .blue-card .blue-card-bottom .collapse-horizontal,
+    .grey-card .grey-card-bottom .collapse-horizontal {
+        right: 31px;
+        top: 1px;
+    }
+    /* sp */
+}

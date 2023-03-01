@@ -1,0 +1,309 @@
+@charset "UTF-8";
+
+/* Common
+---------------------------------------------------------------- */
+* {
+  margin: 0;
+  font-family:'play-bold', 'play-reguler';
+}
+
+.corporate-show {
+  opacity: 1 !important;
+  height: auto !important;
+  transition: opacity 1s;
+}
+
+@font-face {
+  font-family: 'Play-Bold';
+  src: url('../../../shared/fonts/Play-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Play-Regular';
+  src: url('../../../shared/fonts/Play-Regular.ttf');
+}
+
+/* Title
+---------------------------------------------------------------- */
+#container-title {
+  height: 52px;
+  background: #105cab;
+}
+
+#container-title .title-text {
+  margin-left: 10%;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 52px;
+  color: #fff;
+}
+
+
+/* Banner
+---------------------------------------------------------------- */
+#container-banner {
+  overflow: hidden;
+}
+
+#container-banner .banner-img {
+  display: block;
+  opacity: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+
+#banner-box-top {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+/* #banner-box-top::before {
+  content: '';
+  position: absolute;
+  z-index: 10;
+  top: 1px;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  background: url('../img/banner-mask.png') no-repeat;
+  background-size: 100% 100%;
+} */
+
+#banner-box-top::after {
+  content: attr(data-before);
+  position: absolute;
+  z-index: 20;
+  left: 10%;
+  bottom: 10%;
+  width: 484px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#banner-box-top.mission-desc::after {
+  bottom: 28%;
+}
+
+#banner-box-top.mission-desc::before {
+  content: 'Menciptakan Perusahaan';
+  position: absolute;
+  z-index: 20;
+  left: 10%;
+  bottom: 10%;
+  width: 484px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#banner-box-top.information-desc::after {
+  bottom: 18%;
+}
+
+#banner-box-top.information-desc::before {
+  content: 'PT. Yamaha Indonesia Motor Manufacturing';
+  position: absolute;
+  z-index: 20;
+  left: 10%;
+  bottom: 10%;
+  width: 484px;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#banner-box-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background: #162861;
+  width: 100%;
+  height: auto;
+}
+
+#banner-box-bottom .banner-btn {
+  box-sizing: border-box;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 52px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+#banner-box-bottom .banner-btn-active {
+  background: #003a84;
+}
+
+
+/* Main
+---------------------------------------------------------------- */
+.main-hidden-box {
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+/* careerApply
+---------------------------------------------------------------- */
+#careerApply .close {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+#careerApply .modal-body-scroll {
+  overflow-y: scroll;
+  max-height: 400px;
+  padding: 15px;
+}
+
+#careerApply h3 {
+  font-size: 26px;
+  border-bottom: 1px solid #000;
+  color: #0092FF;
+  margin-top: 0;
+}
+
+#careerApply .modal-body p {
+  margin-bottom: 10px;
+}
+
+#careerApply .en {
+  font-style: italic;
+  margin-bottom: 15px !important;
+}
+
+#careerApply ul.decimal {
+  list-style-type: decimal
+}
+
+#careerApply ul.circle {
+  list-style-type: circle;
+}
+
+#careerApply ul.square {
+  list-style-type: square;
+}
+
+#careerApply ol.upper-roman {
+  list-style-type: upper-roman;
+}
+
+#careerApply ol.lower-alpha {
+  list-style-type: lower-alpha;
+}
+
+#careerApply ul,
+#careerApply ol {
+  padding-left: 15px;
+}
+
+#careerApply ol li {
+  margin-bottom: 10px;
+}
+
+#careerApply ol li>.en {
+  margin-bottom: 15px;
+}
+
+#careerApply ul li {
+  margin-bottom: 10px;
+}
+
+#careerApply ul li>.en {
+  margin-bottom: 15px;
+}
+
+#careerApply .li-body {
+  font-weight: normal;
+  margin-top: 15px;
+}
+
+#careerApply .strong {
+  font-weight: bold;
+}
+
+#careerApply .modal-btn {
+  padding: 20px;
+  text-align: center;
+}
+
+#careerApply .btn-agree {
+  display: block;
+  margin: auto;
+  text-decoration: none !important;
+  background-color: #FE0000;
+  color: #fff !important;
+  width: 100px;
+  height: 30px;
+  margin-top: 10px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#careerApply .btn-disabled {
+  cursor: unset;
+  background-color: #999 !important;
+}
+
+/* #careerApply .form-check {
+  font-size: 12px;
+} */
+
+
+/* Responsive
+---------------------------------------------------------------- */
+@media screen and (max-width:767px) {
+
+  #container-title {
+    display: none;
+  }
+
+  #container-banner {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  #banner-box-top {
+    box-shadow: 0px 4px 20px 4px rgb(0 0 0 / 40%);
+  }
+
+  #banner-box-top::after {
+    width: 80%;
+    font-size: 24px;
+  }
+
+  #banner-box-top.mission-desc::before {
+    width: 80%;
+    font-size: 24px;
+  }
+
+  #banner-box-top.information-desc::before {
+    width: 80%;
+    font-size: 12px;
+  }
+
+  #banner-box-bottom {
+    gap: 0px;
+    height: 40px;
+  }
+
+  #banner-box-bottom .banner-btn {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  #banner-box-bottom .banner-btn {
+    padding: 0 12px;
+    font-size: 16px;
+  }
+}

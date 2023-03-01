@@ -1,0 +1,7 @@
+let bannerBtn=document.querySelectorAll('.banner-btn');bannerBtn.forEach(btn=>{btn.onclick=e=>{window.location.href='#'+e.target.innerHTML.replace(/\s/g,'-');bannerBtn.forEach(btn=>{btn.classList.remove('banner-btn-active');})
+e.target.classList.add('banner-btn-active');let bannerList=document.querySelectorAll('.banner-img');bannerList.forEach(banner=>{banner.classList.remove('corporate-show');});document.querySelector('#banner-'+e.target.id).classList.add('corporate-show');document.querySelector('#banner-box-top').classList.remove('mission-desc');document.querySelector('#banner-box-top').classList.remove('information-desc');document.querySelector('#banner-box-top').setAttribute('data-before',e.target.dataset.desc);if(e.target.id==='mission'){document.querySelector('#banner-box-top').classList.add('mission-desc');}
+if(e.target.id==='information'){document.querySelector('#banner-box-top').classList.add('information-desc');}
+let mainList=document.querySelectorAll('.main-box');mainList.forEach(main=>{main.parentNode.classList.remove('corporate-show');});document.querySelector('#main-'+e.target.id).parentNode.classList.add('corporate-show');}})
+let pathname=window.location.pathname;let hash=window.location.hash.substring(1).toLocaleLowerCase();let res=pathname.match(/corporate\/about/);if(res!==null){hash=hash===''?'mission':hash;}
+res=pathname.search(/corporate\/career/);if(res!==null){hash=hash===''?'information':hash;}
+document.querySelector('#'+hash).click();

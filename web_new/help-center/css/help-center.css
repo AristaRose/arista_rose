@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Play-Regular, Play-Bold;
+}
+
+@font-face {
+    font-family: 'Play-Bold';
+    src: url(../../shared/fonts/Play-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Play-Regular';
+    src: url(../../shared/fonts/Play-Regular.ttf);
+}
+
+
+.err {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #de2622;
+}
+
+#help-center-memu {
+    width: 100%;
+    background-color: #e8e8e8;
+}
+
+#help-center-nav {
+    background: linear-gradient(225deg, #23409b 0%, #232f56);
+    background-image: linear-gradient(to left, #23409B, #232F56);
+}
+
+#help-center-nav #help-center-nav-wrapper {
+    display: flex;
+    align-items: center;
+    height: 144px;
+    max-width: 1093px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+#help-center-nav #help-center {
+    width: 52px;
+    height: 47px;
+}
+
+#help-center-nav #help-center-nav-title {
+    height: 40px;
+    margin-left: 15px;
+    color: #ffffff;
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.help-center-sp-title {
+    display: none;
+}
+
+#help-center-memu article {
+    max-width: 1093px;
+    width: 88%;
+    height: 396px;
+    margin: 0 auto;
+}
+
+#help-center-memu .help-center-introduce {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+#help-center-memu .introduce {
+    display: flex;
+    width: 50%;
+    height: 198px;
+    padding-top: 54px;
+}
+
+.introduce>.help-center-img {
+    width: 54px;
+    height: 54px;
+}
+
+.introduce-detail {
+    width: 77%;
+    text-align: left;
+    margin-left: 34px;
+}
+
+.introduce-detail h3 {
+    display: inline-block;
+    font-size: 22px;
+    text-align: left;
+    color: #000000;
+}
+
+.introduce-detail p {
+    font-size: 18px;
+    text-align: left;
+    color: #000000;
+
+}
+
+.introduce-detail img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: -5px;
+}
+
+#help-center-form {
+    width: 100%;
+}
+
+#help-center-form .article {
+    max-width: 1093px;
+    width: 88%;
+    margin: 0 auto;
+}
+
+#help-center-form #sub-title {
+    margin-top: 5%;
+    margin-bottom: 40px;
+    color: #23409B;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#help-center-form .input-title {
+    margin-bottom: 10px;
+    color: #213D95;
+    font-size: 22px;
+    font-weight: Bold;
+    text-align: left;
+}
+
+#help-center-form .help-center-input {
+    width: 100% !important;
+    height: 54px;
+    margin-bottom: 23px;
+    padding-left: 36px;
+    font-size: 16px;
+    background-color: #e8e8e8;
+    border-radius: 39px;
+    -webkit-border-radius: 39px;
+    -moz-border-radius: 39px;
+    -ms-border-radius: 39px;
+    -o-border-radius: 39px;
+}
+
+#help-center-form .help-center-input .help-center-text {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+}
+
+#help-center-form .textarea {
+    height: 216px;
+}
+
+#help-center-form .help-center-input .help-center-textarea {
+    height: 216px;
+    width: 100%;
+    padding-top: 2%;
+    resize: none;
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    outline: none;
+    overflow: hidden;
+}
+
+#submit-btn {
+    width: 148px;
+    height: 51px;
+    border: none;
+    margin-top: 36px;
+    margin-bottom: 100px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #23409b;
+    outline: none;
+    border-radius: 36px;
+    cursor: pointer;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    -ms-border-radius: 36px;
+    -o-border-radius: 36px;
+}
+
+/* smartPhone */
+@media screen and (max-width: 767px) {
+    .err {
+        margin-top: -15px;
+        margin-bottom: 15px;
+        font-size: 10px;
+        text-indent: 1rem;
+    }
+
+    #help-center-memu {
+        background-color: #fff;
+    }
+
+    #help-center-nav,
+    #help-center-nav-wrapper-gradient {
+        display: none;
+    }
+
+    .help-center-sp-title {
+        display: block;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        color: #000000;
+        margin: 10px 0 20px;
+    }
+
+    #help-center-memu article {
+        height: auto;
+    }
+
+    #help-center-memu .help-center-introduce {
+        flex-wrap: nowrap;
+    }
+
+    #help-center-memu .introduce {
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding-top: 0px;
+    }
+
+    .introduce-detail {
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .introduce-detail img {
+        width: 12px;
+        height: 12px;
+        margin-left: 10px;
+        margin-top: 0px;
+    }
+
+    #help-center-memu .introduce h3 {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    #help-center-memu .introduce p {
+        font-size: 10px;
+    }
+
+    .introduce>.help-center-img {
+        width: 38px;
+        height: 38px;
+        margin-bottom: 20px;
+    }
+
+    #help-center-form #sub-title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #000;
+        font-size: 14px;
+    }
+
+    #help-center-form .input-title {
+        font-size: 12px;
+        text-indent: 1rem;
+    }
+
+    #help-center-form .help-center-input {
+        height: 32px;
+        line-height: 32px;
+        padding-left: 0;
+        text-indent: 1rem;
+        font-size: 12px;
+    }
+
+    #help-center-form .help-center-input .help-center-text {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    #help-center-form .textarea {
+        height: auto;
+        border-radius: 24px;
+    }
+
+    #help-center-form .help-center-input .help-center-textarea {
+        width: 90%;
+        height: auto;
+        line-height: 20px;
+        padding-top: 10px;
+        font-size: 12px;
+    }
+
+    #submit-btn {
+        width: 100%;
+        height: 40px;
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: #ffffff;
+        font-size: 16px;
+    }
+}
